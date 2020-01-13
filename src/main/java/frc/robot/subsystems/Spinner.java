@@ -38,6 +38,7 @@ public class Spinner {
     }
 
     public void rotationControlInit() {
+        this.targetRotations = (int)SmartDashboard.getNumber("Target Rotations", 3);
         this.startColor = this.COLOR_SENSOR.getNamedColor();
     }
 
@@ -65,7 +66,7 @@ public class Spinner {
     }
 
     public void positionControlInit() {
-        this.targetColor = SmartDashboard.getString("Spinner Target Color", "Unknown");
+        this.targetColor = SmartDashboard.getString("Target Color", "Unknown");
     }
 
     public void positionControlPeriodic() {
