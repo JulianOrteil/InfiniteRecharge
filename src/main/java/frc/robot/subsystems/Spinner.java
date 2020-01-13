@@ -53,7 +53,7 @@ public class Spinner {
             this.counted = false;
         }
 
-        if ((this.rotations - this.targetRotations) == 2) {
+        if ((this.rotations - this.targetRotations) <= 2 && (this.rotations - this.targetRotations) > 0) {
             this.spinnerMotor.set(0.2);
         } else if (this.rotations != this.targetRotations) {
             this.spinnerMotor.set(0.5);
